@@ -48,14 +48,12 @@ gulp.task('sass', () => {
     .pipe(browserSync.stream());
 });
 
-
 gulp.task('js', () => {
   return gulp.src([ src_assets_folder + 'js/**/*.js' ], { since: gulp.lastRun('js') })
     .pipe(plumber())
     .pipe(webpack({
       mode: 'development'
     }))
-    .pipe(sourcemaps.init())
       .pipe(babel({
         presets: [
           [

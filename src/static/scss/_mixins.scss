@@ -1,0 +1,26 @@
+/* MEDIAS */
+
+@mixin media($size) {
+  @if $size == phone {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $size == extra {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin boxShadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.45);
+}
+

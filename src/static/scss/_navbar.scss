@@ -1,0 +1,35 @@
+nav {
+
+  padding: 1rem 2rem;
+
+  &#mainNav {
+    position: sticky;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    background-color: #fff;
+
+    &.scrolling {
+      @include boxShadow();
+    }
+  }
+
+  #burger {
+    width: 25px;
+    display: block;
+    cursor: pointer;
+
+    div {
+      height: 3px;
+      background-color: #000;
+      margin: 3px;
+    }
+
+    @include media (desktop) {
+      display: none;
+    }
+  }
+
+}
+

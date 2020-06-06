@@ -1,0 +1,45 @@
+$dark: #93a446;
+$light: #fff;
+
+a {
+
+  display: block;
+
+  &.button {
+    text-transform: uppercase;
+    font-family: brandon_grotesquelight;
+    background-color: $dark;
+    border-color: $light;
+    color: $light;
+    font-weight: 400;
+    border: solid 1px;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $light;
+      border-color: $dark;
+      color: $dark;
+    }
+  }
+}
+
+#mainContainer {
+  max-width: 1800px;
+  margin: auto;
+}
+
+.logo {
+  img {
+    display: block;
+    width: 100%;
+  }
+  span {
+    display: none;
+  }
+}
+
+.clearFix {
+  clear: both;
+}
+

@@ -161,11 +161,20 @@
     };
 
 
+    /** Chargement des dernières images */
+    $.loadImages = function () {
+        $("#offres img").imgLoad(function () {
+            $(this).fadeTo("fast", 1);
+        });
+    }
+
+
 }(jQuery));
 
 
 $(document).ready(function () {
     $.loadingSlide();
     $.initScrolling();
+    $.loadImages();
 });
 

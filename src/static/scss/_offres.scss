@@ -35,12 +35,16 @@
 
         div {
           width: 80%;
+          margin: auto;
 
           @include media(phone) {
             width: 70%;
           }
 
-          margin: auto;
+          img {
+            opacity: 0;
+          }
+
         }
       }
 

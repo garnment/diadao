@@ -21,29 +21,201 @@
             <div></div>
         </div>
         <div class="logo"><img src="./static/img/logo.png"
-                               alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"><span>Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher </span>
+                               alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher">
+            <span>Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher </span>
         </div>
-        <div><a class="button">réserver</a></div>
+        <div id="resa"><a class="button green">réserver</a></div>
     </nav>
-
     <section id="slideShow">
-        <div id="textSlide">
-            <a class="btSlide" id="prev">&#10094;</a>
-            <a class="btSlide" id="next">&#10095;</a>
+        <div id="loader">
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div id="slideContainer" class="loading">
+
+            <div id="textSlide">
+                <img src="./static/img/natural_slowlife.png" alt="Natural slow life -by Yves Rocher-" align="center">
+                <h1>
+                    Un temps pour retrouver, dans la nature,<br>l'essence même du bien-être
+                </h1>
+                <a class="button blue">découvrir</a>
+            </div>
+
+            <div id="telSlide">
+                <p>TEL : +33 (0)2 99 08 50 50 • RESA.HOTEL@YRNET.COM</p>
+            </div>
+
+            <div id="btSlideContainer">
+                <div class="btSlide" id="prev">
+                    <div class="arrow">&#10094;</div>
+                    <div class="bg"></div>
+                </div>
+                <div class="btSlide" id="next">
+                    <div class="arrow">&#10095;</div>
+                    <div class="bg"></div>
+                </div>
         </div>
 
         <div id="imgSlide">
-            <div class="itemSlide"><img src="./static/img/header.jpg" alt=""></div>
-            <div class="itemSlide"><img src="./static/img/header2.jpg" alt=""></div>
+            <div class="itemSlide"><img src="./static/img/header.jpg"
+                                        alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"></div>
+            <div class="itemSlide"><img src="./static/img/header2.jpg"
+                                        alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"></div>
         </div>
+
+        </div>
+    </section>
+
+    <section id="ambiances">
+
+        <div id="ambiance1" class="ambiance">
+            <div id="room1" class="imgAmbiance">
+                <div class="overflow">
+                    <div><img src="./static/img/Shoot1-433-15.jpg"
+                              alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"></div>
+                </div>
+            </div>
+
+            <div id="room2" class="arguAmbiance">
+                <h3>9:23</h3>
+                <h2>Un doux réveil</h2>
+                <p>Laissez la nature<br>vous réveiller tout en douceur</p>
+            </div>
+
+            <div id="room3" class="imgAmbiance">
+                <div class="overflow">
+                    <div><img src="./static/img/suite6-354-15.jpg"
+                              alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ambiance2" class="ambiance">
+            <div id="spa1" class="arguAmbiance">
+                <h3>11:07</h3>
+                <h2>Détente.<br/>Relaxation.<br/>Silence.</h2>
+                <p>Se ressourcer, se retrouver ...<br/>Un rituel pour soi pour une<br/>douce entrée en matière.</p>
+            </div>
+            <div id="spa2" class="imgAmbiance">
+                <div class="overflow">
+                    <div><img src="./static/img/chambre22-123-15.jpg"
+                              alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"></div>
+                </div>
+            </div>
+
+            <div id="spa3" class="imgAmbiance">
+                <div class="overflow">
+                    <div><img src="./static/img/YRshoot1-2322-15.jpg"
+                              alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="offres">
+        <ul>
+            <li>
+
+                <div class="illustration">
+                    <div><img src="./static/img/offre1.jpg"
+                              alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"></div>
+                </div>
+
+                <div class="card">
+                    <h2>Noël à la Grée des Landes</h2>
+                    <div class="detail">
+                        <p>Le bien-être s'invite à Noël</p>
+                        <table class="priceTable">
+                            <tr>
+                                <td>490 EUR</td>
+                                <td>2 personnes<br>1 nuitée</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div><a class="button green">En savoir plus</a></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="illustration">
+                    <div><img src="./static/img/offre2.jpg"
+                              alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"></div>
+                </div>
+                <div class="card">
+
+                    <h2>Réveillon de la Saint-Sylvestre</h2>
+                    <div class="detail">
+                        <p>Un séjour d'exception pour la fin de l'année à partager avec vos amis ou votre famille.<br>
+                            Réservation jusqu'au 20/12/2017.
+                        </p>
+                        <table class="priceTable">
+                            <tr>
+                                <td>1042 EUR</td>
+                                <td>2 personnes<br>1 nuitée</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div><a class="button green">En savoir plus</a></div>
+                </div>
+            </li>
+
+            <li>
+                <div class="illustration">
+                    <div><img src="./static/img/offre3.jpg"
+                              alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"></div>
+                </div>
+
+                <div class="card">
+                    <h2>Coffrets cadeaux</h2>
+                    <div class="detail">
+                        <table>
+                            <tr>
+                                <td>&bull; Séjour</td>
+                                <td>&bull; Cabane d'exception</td>
+                            </tr>
+                            <tr>
+                                <td>&bull; Soins & Bien Etre</td>
+                                <td>&bull; Chèque Cadeau</td>
+                            </tr>
+                            <tr>
+                                <td>&bull; Gastronomie</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <table class="priceTable">
+                            <tr>
+                                <td>48 EUR</td>
+                                <td>2 personnes</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div><a class="button green">Tous nos coffrets cadeaux</a></div>
+                </div>
+            </li>
+
+        </ul>
     </section>
 
 
     <footer>
         <div class="logo"><img src="./static/img/logo.png"
-                               alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"><span>Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher </span>
+                               alt="Yves Rocher - la grée des landes. Eco-hôtel Spa Yves Rocher"
+                               title="Yves Rocher - la grée des landes -  Eco-hôtel Spa Yves Rocher">
         </div>
     </footer>
+
 
 </div>
 

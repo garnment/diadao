@@ -1,39 +1,92 @@
-$dark: #93a446;
-$light: #fff;
+$darkGreen: #93a446;
+$lightGreen: #fff;
+
+$darkBlue: #6f89b1;
+$lightBlue: #fff;
+
+body {
+  font-family: brandon_grotesquelight, "Helvetica";
+  font-size: calc(10px + 0.5vw);
+}
+
+p, table {
+  font-size: calc(8px + 0.5vw);
+}
+
+h2 {
+  font-family: brandon_grotesquemedium, Helvetica;
+  font-size: calc(10px + 0.5vw);
+  line-height: calc(11px + 0.5vw);
+  text-transform: uppercase;
+  margin: 3% auto;
+}
+
 
 a {
 
   display: block;
 
   &.button {
+    font-family: brandon_grotesquemedium, "Helvetica";
+    font-size: calc(8px + 0.5vw);
     text-transform: uppercase;
-    font-family: brandon_grotesquelight;
-    background-color: $dark;
-    border-color: $light;
-    color: $light;
-    font-weight: 400;
     border: solid 1px;
-    padding: 10px;
     cursor: pointer;
+    padding: 4%;
+    transition: 0.6s ease;
+    margin: auto;
 
-    &:hover {
-      background-color: $light;
-      border-color: $dark;
-      color: $dark;
+    &.green {
+      color: $lightGreen;
+      background-color: $darkGreen;
+      border-color: $lightGreen;
+
+      &:hover {
+        background-color: $lightGreen;
+        border-color: $darkGreen;
+        color: $darkGreen;
+      }
     }
+
+    &.blue {
+      color: $darkBlue;
+      border-color: $darkBlue;
+
+      &:hover {
+        background-color: $darkBlue;
+        border-color: $lightBlue;
+        color: $lightBlue;
+      }
+    }
+
   }
 }
 
 #mainContainer {
-  max-width: 1800px;
-  margin: auto;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  display: block;
+  position: relative;
+
+  &.scrolling {
+    @include boxShadow();
+  }
 }
 
+
 .logo {
+  display: block;
+  text-align: center;
+
   img {
-    display: block;
-    width: 100%;
+    @include media(phone) {
+      width: calc(60%);
+      height: auto;
+    }
   }
+
   span {
     display: none;
   }

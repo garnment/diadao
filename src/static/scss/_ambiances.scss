@@ -1,0 +1,132 @@
+.ambiance {
+  position: relative;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+
+  h3 {
+    font-family: brandon_grotesquelight, Helvetica;
+    font-weight: 500;
+    color: #a8a8a8;
+  }
+
+  .arguAmbiance {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+  }
+
+}
+
+#ambiances {
+  margin-bottom: 15%;
+
+  img {
+    opacity: 0;
+  }
+}
+
+#ambiance1 {
+  width: 80%;
+
+  @include media(phone) {
+    width: 90%;
+  }
+
+  #room1 {
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+
+    @include media(phone) {
+      width: 50%;
+    }
+  }
+
+  #room2 {
+    z-index: 2;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding: 2%;
+    width: 25%;
+    height: 20%;
+
+    @include media(phone) {
+      margin-right: 1%;
+      margin-top: 1%;
+      padding: 1%;
+      width: 50%;
+      height: 10%;
+    }
+  }
+
+  #room3 {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    right: 1%;
+    bottom: 5%;
+    z-index: 1;
+    overflow: hidden;
+
+    @include media(phone) {
+      height: 60%;
+    }
+
+    .overflow div {
+      position: absolute;
+    }
+  }
+
+  .overflow {
+    overflow: hidden;
+  }
+
+}
+
+#ambiance2 {
+  width: 70%;
+
+  @include media(phone) {
+    width: 90%;
+  }
+
+  #spa1 {
+    margin-left: 15%;
+    width: 40%;
+    height: 10%;
+    background-color: #fff;
+    z-index: 1;
+
+    @include media(phone) {
+      width: 60%;
+      margin-top: 5%;
+      margin-left: 10%;
+    }
+  }
+
+  #spa2 {
+    width: 60%;
+    height: 100%;
+
+    @include media(phone) {
+      width: 40%;
+      height: 50%;
+    }
+
+    img {
+      @include media(phone) {
+        margin-top: 40%;
+      }
+    }
+
+  }
+
+  #spa3 {
+    position: absolute;
+    right: 40%;
+    bottom: 4%;
+    width: 50%;
+  }
+}

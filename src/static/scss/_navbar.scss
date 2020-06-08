@@ -1,6 +1,6 @@
 nav {
 
-  padding: 1rem 2rem;
+  padding: 2% 3%;
 
   &#mainNav {
     position: sticky;
@@ -9,14 +9,16 @@ nav {
     justify-content: space-between;
     top: 0;
     background-color: #fff;
+    transition: 0.6s ease;
 
     &.scrolling {
       @include boxShadow();
+      background-color: #f4f4f4;
     }
   }
 
   #burger {
-    width: 25px;
+    width: 30px;
     display: block;
     cursor: pointer;
 
@@ -28,6 +30,17 @@ nav {
 
     @include media (desktop) {
       display: none;
+    }
+  }
+
+  #resa {
+    display: block;
+    text-align: center;
+    width: 15%;
+    height: 40%;
+
+    @include media(phone) {
+      width: 25%;
     }
   }
 

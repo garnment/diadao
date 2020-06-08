@@ -1,12 +1,17 @@
-@import "variables";
 @import "mixins";
 @import "reset";
 @import "common";
+@import "loader";
+
+
+
 
 
 
 
 
 @import "navbar";
-@import "sections";
+@import "slideshow";
+@import "ambiances";
+@import "offres";
 @import "footer";

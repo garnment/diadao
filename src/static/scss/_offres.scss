@@ -1,0 +1,111 @@
+
+#offres {
+
+  width: 90%;
+  margin: auto;
+  display: block;
+
+  ul {
+    display: flex;
+
+    @include media(phone) {
+      flex-direction: column;
+    }
+
+    li {
+      display: flex;
+      flex: 1 1 0;
+      position: relative;
+      margin: 1%;
+
+      @include media(phone) {
+        margin: 20% 1%;
+      }
+
+      .illustration {
+        width: 100%;
+
+        z-index: 1;
+        position: absolute;
+        bottom: 90%;
+
+        @include media(phone) {
+          bottom: 75%;
+        }
+
+        div {
+          width: 80%;
+
+          @include media(phone) {
+            width: 70%;
+          }
+
+          margin: auto;
+        }
+      }
+
+      .card {
+        padding: 30% 10% 10%;
+        width: 100%;
+        @include boxShadow();
+
+        h2 {
+          display: block;
+          min-height: calc(30px + 1vw);
+
+          @include media(phone) {
+            min-height: calc(15px + 1vw);
+          }
+
+        }
+
+        .detail {
+          min-height: calc(170px + 1vw);
+
+          @include media(phone) {
+            min-height: calc(100px + 1vw);
+          }
+
+          position: relative;
+
+          table {
+            width: 100%;
+
+            &.priceTable {
+              position: absolute;
+              bottom: 0;
+              min-height: calc(110px + 1vw);
+
+              @include media(phone) {
+                min-height: calc(40px + 1vw);
+              }
+
+              tr {
+                td {
+                  vertical-align: middle;
+                  &:first-child {
+                    font-size: calc(10px + 1vw);
+                  }
+                  &:last-child {
+                    text-align: right;
+                  }
+                }
+              }
+
+            }
+
+          }
+        }
+      }
+
+      .button {
+        display: block;
+        text-align: center;
+      }
+
+    }
+
+  }
+
+}
+
